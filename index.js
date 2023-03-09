@@ -1,29 +1,91 @@
 let options1 = {
-  chart: {
-    type: "line",
-  },
-  series: [
-    {
-      name: "sales",
-      data: [30, 40, 35, 50, 49, 60, 70, 91, 125],
-    },
-  ],
-  xaxis: {
-    categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
-  },
-  responsive: [
-    {
-      breakpoint: undefined,
-      options: {},
-    },
-  ],
+        series: [70],
+        chart: {
+        height: 300,
+        type: 'radialBar',
+      },
+      plotOptions: {
+        radialBar: {
+          hollow: {
+            size: '50%',
+          }
+        },
+      },
+      labels: ['Gadenia'],
+//   responsive: [
+//     {
+//       breakpoint: undefined,
+//       options: {},
+//     },
+//   ],
 };
 
-let options2 = {};
+let options2 = {
+    series: [50],
+    chart: {
+    height: 300,
+    type: 'radialBar',
+  },
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '50%',
+      }
+    },
+  },
+  labels: ['Rose '],
+//   responsive: [
+//     {
+//       breakpoint: undefined,
+//       options: {},
+//     },
+//   ],
+};
 
-let options3 = {};
+let options3 = {
+    series: [30],
+    chart: {
+    height: 300,
+    type: 'radialBar',
+  },
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '50%',
+      }
+    },
+  },
+  labels: ['Lilly'],
+//   responsive: [
+//     {
+//       breakpoint: undefined,
+//       options: {},
+//     },
+//   ],
+};
 
-let options4 = {};
+let options4 = {
+      series: [90],
+    chart: {
+    height: 300,
+    type: 'radialBar',
+  },
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '50%', 
+      }
+    },
+  },
+  labels: ['Chrysanthemum '],
+//   responsive: [
+//     {
+//       breakpoint: undefined,
+//       options: {},
+//     },
+//   ],};
+};
+
 
 //creation of the first chart with ApexCharts
 let chart1 = new ApexCharts(
